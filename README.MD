@@ -125,6 +125,12 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvi
 pip install -r requirement.txt
 ```
 
+Or in Ubuntu 22.04
+```
+pip install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+export LD_LIBRARY_PATH=~/miniconda3/envs/isaac/lib:$LD_LIBRARY_PATH
+```
+
 2. Download and setup [Isaac Gym](https://developer.nvidia.com/isaac-gym). 
 
 
