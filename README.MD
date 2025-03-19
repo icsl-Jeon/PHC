@@ -128,7 +128,17 @@ pip install -r requirement.txt
 Or in Ubuntu 22.04
 ```
 pip install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+sudo apt install ninja-build
 export LD_LIBRARY_PATH=~/miniconda3/envs/isaac/lib:$LD_LIBRARY_PATH
+```
+
+In my bashrc:
+```sh
+export LD_LIBRARY_PATH=~/miniconda3/envs/isaac/lib:$LD_LIBRARY_PATH
+export CUDA_VISIBLE_DEVICES=0
+export GYM_GPU=1
+export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
+export VK_LAYER_PATH=/usr/share/vulkan/implicit_layer.d
 ```
 
 2. Download and setup [Isaac Gym](https://developer.nvidia.com/isaac-gym). 
