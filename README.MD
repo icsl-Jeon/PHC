@@ -128,6 +128,7 @@ pip install -r requirement.txt
 Or in Ubuntu 22.04
 ```
 pip install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install numpy==1.23.5
 sudo apt install ninja-build
 export LD_LIBRARY_PATH=~/miniconda3/envs/isaac/lib:$LD_LIBRARY_PATH
 ```
